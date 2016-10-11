@@ -19,7 +19,7 @@
          <%= current_user.full_name.present? ? current_user.full_name : current_user.email %>
        </li>
        <li class="col-md-4 logout">
-         <%= link_to('<i class="fa fa-unlock-alt"></i> logout'.html_safe, destroy_user_session_path, class: "btn btn-xs btn-danger", method: :delete) %>
+         <%= link_to('<i class="fa fa-sign-out "></i> Logout'.html_safe, destroy_user_session_path, class: "btn btn-xs btn-danger", method: :delete) %>
        </li>
      </ul>
    </div>
