@@ -18,7 +18,7 @@
 				<td><%= friend.email %></td>
 			
 					<td><%= link_to '<i class="fa fa-eye"></i> View Profile'.html_safe, user_path(friend), class: 'btn btn-xs btn-default'  %>
-						<%= link_to '<i class="fa fa-trash"></i> Unfriend'.html_safe, friendship_path(friend), method: :delete, data: {confirm: "Are you sure?"}, class: 'btn btn-xs btn-danger' %>
+						<%= link_to '<i class="fa fa-unlink"></i> Unfriend'.html_safe, friendship_path(friend), method: :delete, data: {confirm: "Are you sure?"}, class: 'btn btn-xs btn-danger' %>
 					</td>
 			</tr>
 			<% end %>

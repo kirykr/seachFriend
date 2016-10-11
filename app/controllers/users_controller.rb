@@ -9,6 +9,11 @@ class UsersController < ApplicationController
 		# @user = current_user
 	end
 
+	def show
+		@user = User.find(params[:id])
+		@user_stocks = @user.stocks
+	end
+
 	def search
 		# render json: params[:search_param] #check as json 
 		@users = User.search(params[:search_param])
